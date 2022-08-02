@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>freeCodeCamp Survey</title>
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey</h1>
+    <p id="description">Fill out the fields below</p>
+    
+    <form id="survey-form">
+      <div>
+        <label id="name-label" for="name">Name: </label>
+        <br />
+        <input required type="text" id="name" placeholder="John Smith" />
+      </div>
+      <div>
+        <label id="email-label" for="email">E-mail: </label>
+        <br />
+        <input required type="email" id="email" placeholder="johnsmith12@gmail.com" />
+      </div>
+      <div>
+        <label id="number-label" for="number">Number: </label>
+        <br />
+        <input required type="number" id="number" placeholder="123456789" min="0" max="255" />
+      </div>
+      <div>
+        <label id="number-label" for="number">Expertise: </label>
+        <br />
+        <select id="dropdown">
+          <option>Beginner</option>
+          <option>Intermediate</option>
+          <option>Expert</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <input type="radio" value="Male" id="male" name="radio-buttons" />
+        <label for="male">Male</label>
+        <br />
+        <input type="radio" value="Female" id="female" name="radio-buttons" />
+        <label for="female">Female</label>
+      </div>
+      <br />
+      
+      <div>
+        <label id="number-label" for="additional">Additional Info: </label>
+        <br />
+        <textarea id="additional" rows="5"></textarea>
+      </div>
+      <div>
+        <input type="checkbox" value="terms" id="terms" name="radio-buttons" />
+        <label for="terms">I accept the terms and service</label>
+        <br />
+        <input type="checkbox" value="newsletter" id="news" name="radio-buttons" />
+        <label for="news">Subscribe to newsletter</label>
+      </div>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
